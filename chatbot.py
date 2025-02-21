@@ -44,5 +44,5 @@ def chat():
 import os
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Get the port from the environment
-    app.run(host="0.0.0.0", port=port)  # Allow external access
+    port = int(os.environ.get("PORT", 10000))  # Render uses this port
+    app.run(host="0.0.0.0", port=port, debug=True)  # Force public access
